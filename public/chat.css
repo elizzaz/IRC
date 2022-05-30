@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+.display{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+h1{
+    font-size: 20px;
+}
+.chatTitle{
+        width: 5%;
+        float: inline-end;
+}
+.app{
+    width: 100%;
+    height: 100vh;
+    background-color: #e2eafc;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.container{
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+}
+.msgContainer {
+	width: 80%;
+	height: 52vh;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+}
+.chatTitle {
+	text-align: center;
+	color: rgb(0, 81, 173);
+	margin: 10px 50px auto auto;
+	padding: 2px;
+	border-radius: 5rem;
+}
+
+/* user typing */
+#isWritting{
+    color: white;
+    font-style: italic;
+}
+
+/* form */
+.app > form {
+	position: absolute;
+	bottom: 16px;
+	width: 80%;
+	margin-left: 30%;
+}
+#msgInput {
+	display: inline-block;
+	width: 50%;
+	height: 35px;
+	border: solid 2px #ABC4FF;
+}
+#msgInput:focus-visible {
+	display: inline-block;
+	width: 50%;
+	height: 35px;
+	border: solid 2px #ABC4FF;
+}
+form > input[type="submit"]{
+    padding: 9px;
+    border: none;
+}
+
+/* User comes and quit */
+.newUser {
+	color: grey;
+	font-style: italic;
+}
+.quitUser{
+    color: grey;
+    font-style: italic;
+}
+
+/* Messages */
+.message{
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    max-width: 45%;
+}
+.newMessageMe {
+	background-color: rgb(77, 155, 243);
+	margin-left: 55%;
+	margin-bottom: 4%;
+}
+.newMessageAll{
+    background-color: #abc4ff;
+    margin-bottom: 4%;
+}
+.whisper{
+    background-color: #d7e3fc;
+    margin-bottom: 4%;
+}
+
+/* Messages from databse */
+.oldMessages{
+    background-color: #abc4ff;
+    margin-top: 2%;
+}
+.oldWhispers{
+    background-color: #d7e3fc;
+    margin-top: 2%;
+}
+
+#roomList {
+	display: flex;
+	flex-direction: row-reverse;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	justify-self: center;
+}
+/* Channels */
+.channelList {
+	color: #6c757d;
+    height: 100%;
+    width: 100%;
+}
+.elementList {
+	width: 40px;
+	background-color: #d7e3fc;
+	padding: 20px;
+	transition: 0.5s;
+	cursor: pointer;
+	margin-right: 1.5rem;
+	border-radius: 50%;
+	height: 40px;
+	text-align: center;
+}
+.elementList:hover {  
+    background-color: #ccdbfd;
+    transition: 0.5s;
+    cursor: pointer;
+    color: black;
+}
+.inChannel {
+    background-color: #d7e3fc;
+    transition: 0.5s;
+}
+
+#receiverInput{
+    padding: 2vh;
+    background-color: #4D9BF3;
+    border: none;
+    border-radius: 5%;
+    color: white;
+}
+
+#btnSend{
+	padding: 2vh;
+    background-color: #4D9BF3;
+    border: none;
+    border-radius: 5%;
+    color: white;
+}
+
+#btnSend:hover{
+	padding: 2vh;
+    background-color: white;
+    border: none;
+    border-radius: 5%;
+    color: #4D9BF3;
+    transition: 0.2s;
+}
+
+#salon1{
+    margin-bottom: 1.5rem;
+}
+
+.hidden{
+    display: none;
+}
+.visibility{
+    visibility: visible;
+}
+#channellist, #userlist{
+	margin-top: -41vh;
+}
